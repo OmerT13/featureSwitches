@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 router.get('/feature', function (req, res) {
   email = req.query.email
   featureName = req.query.featureName
-  response = utils.canAccess(email,featureName)
+  response.canAccess = utils.canAccess(email,featureName)
   res.json(response)
 })
 
