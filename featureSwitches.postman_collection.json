@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "ba09884f-f0f6-4d25-b3db-057e9ed24fe3",
+		"name": "featureSwitches",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/feature?email=jane@email.com&featureName=viewCars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feature"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "jane@email.com"
+						},
+						{
+							"key": "featureName",
+							"value": "viewCars"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Home Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/feature?email=john@email.com&featureName=viewToys&enable=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feature"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "john@email.com"
+						},
+						{
+							"key": "featureName",
+							"value": "viewToys"
+						},
+						{
+							"key": "enable",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
